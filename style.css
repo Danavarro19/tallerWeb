@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #83d19d;
+}
+
+h1 {
+  line-height: 0.7em;
+}
+
+.header {
+  padding: 15px;
+}
+
+.header > *{
+  display: inline-block;
+}
+
+/*
+.logo {
+  position: static;
+}
+
+.logo > i, .logo > div {
+  position: absolute;
+} */
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.titulo .tituloSecc {
+  font-size: 0.5em;
+  font-weight: lighter;
+}
+
+.fa-cloud {
+  color: #b1dfb5;
+}
+
+.navBar {
+  border-top:solid 1px #000;
+  border-bottom:solid 1px #000;
+  height: inherit;
+}
+
+.navBar li {
+  text-transform: uppercase;
+  list-style: none;
+  display: inline-block;
+  padding: 15px;
+}
+
+.navBar a{
+  text-decoration: none;
+  color: #000;
+}
+
+.navBar li:hover{
+  background:#b1dfb5;
+}
