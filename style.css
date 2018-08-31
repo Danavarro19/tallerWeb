@@ -5,63 +5,212 @@
 }
 
 body {
-  background: #83d19d;
+  background: #b2dbb2;
 }
 
-h1 {
-  line-height: 0.7em;
+header {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  padding-top:2em;
 }
 
-.header {
-  padding: 15px;
-}
-
-.header > *{
-  display: inline-block;
-}
-
-/*
-.logo {
-  position: static;
-}
-
-.logo > i, .logo > div {
-  position: absolute;
-} */
-
-.titulo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2em;
-  text-transform: uppercase;
-}
-
-.titulo .tituloSecc {
-  font-size: 0.5em;
-  font-weight: lighter;
-}
-
-.fa-cloud {
-  color: #b1dfb5;
+.marca {
+  flex: 1;
+  background: url("public/img/cloud-solid.png");
+  background-repeat: no-repeat;
+  background-position-x:0.1em;
+  background-position-y:1.1em;
+  display: flex;
 }
 
 .navBar {
-  border-top:solid 1px #000;
-  border-bottom:solid 1px #000;
-  height: inherit;
+  margin-top: 7.8em;
+  flex: 2;
 }
 
-.navBar li {
-  text-transform: uppercase;
+.marca div {
+  flex: 1;
+}
+
+.marca h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4em;
+  line-height: 0.9;
+  flex: 3;
+  padding-top: 0.5em;
+  padding-left: 1em;
+}
+
+.marca span {
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.navBar ul {
   list-style: none;
-  display: inline-block;
-  padding: 15px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
-.navBar a{
+.navBar ul li {
+  display: inline-block;
+  padding: 0.8em;
+}
+
+.navBar ul a {
   text-decoration: none;
   color: #000;
+  text-transform: uppercase;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.navBar li:hover{
-  background:#b1dfb5;
+.navBar ul li:hover {
+  background: #cde8cd;
+}
+
+.moreActions {
+  width: 80%;
+  margin: auto;
+  padding: 2em;
+  display: flex;
+}
+
+.section {
+  display: flex;
+}
+
+.button {
+  padding: 0.2em 1em;
+  border: 1px solid #827d7d;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.icon {
+  padding: 0.1em;
+}
+
+.button:hover {
+  background: rgb(162, 162, 163,0.5);
+}
+
+
+.button:hover a {
+  color: #FFFFFF;
+}
+
+
+.moreActions a {
+  text-decoration: none;
+  color: #827d7d;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.moreActions .icon.relate {
+  flex: 2;
+}
+.moreActions .icon {
+  padding-top: 0.3em;
+  flex: 1;
+}
+
+.moreActions .section{
+  flex: 1;
+}
+
+.section .button {
+  flex: 3;
+}
+
+.bigWraper {
+  width: 80%;
+  margin: auto;
+}
+
+.articulo {
+  margin: 5em auto;
+  background: #FFFFFF;
+  display: flex;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+.articleHeader {
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+.articulo img {
+  flex: 1;
+}
+
+.articulo .articleSection {
+  flex-direction: column;
+  flex: 1;
+}
+
+.articleHeader .userInfo {
+  flex:1;
+  padding: 0 1em;
+}
+
+.articleHeader i {
+  font-size: 2rem;
+  padding: 0.2em;
+}
+
+.articleBody {
+  padding: 1em;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.articleFooter {
+  width: 90%;
+  margin: auto;
+  padding: 1em 0;
+  border-top: 0.5px solid black;
+
+}
+
+.articleFooter .footerSecti {
+  flex:7;
+}
+
+.articleFooter i {
+  flex: 1;
+  color: red;
+}
+
+.footerSecti p {
+  margin: 0 0.5em;
+  color: #827d7d;
+}
+
+.footerSecti a:hover {
+  color: #545151;
+}
+
+.footerSecti a {
+  color: #827d7d;
+  text-decoration: none;
+}
+
+footer .section {
+  width: 80%;
+  margin:auto;
+  margin-bottom: 5em;
+}
+
+footer p {
+  flex: 7;
+}
+
+footer .icons {
+  flex:1;
+  font-size: 1.5em;
 }
